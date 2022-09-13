@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  OpeningView.swift
 //  ALevelProgrammingProject
 //
 //  Created by Nicholas Hodson on 13/09/2022.
@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OpeningView: View {
     var body: some View {
-        Text("Hello, worl!")
-            .padding()
+        ZStack{
+            Rectangle()
+            Text("Hello World!")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        OpeningView()
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct ALevelProgrammingProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OpeningView()
         }
     }
 }
