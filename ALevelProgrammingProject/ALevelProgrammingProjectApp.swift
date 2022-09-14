@@ -11,7 +11,22 @@ import SwiftUI
 struct ALevelProgrammingProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            OpeningView()
+            TabView{
+                ChoresView()
+                    .tabItem{
+                        Label("Chores", systemImage: "list.number")
+                    }
+                MainView()
+                    .tabItem{
+                        Label("Main Menu", systemImage: "house")
+                    }
+                RewardsView()
+                    .tabItem{
+                        Label("Rewards", systemImage: "gift")
+                    }
+                
+            }
         }
     }
 }
+//
