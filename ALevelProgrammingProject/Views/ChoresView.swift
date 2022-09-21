@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ChoresView: View {
     var body: some View {
-        NavigationView {
             ZStack{
                 VStack{
                     HStack{
@@ -26,10 +25,16 @@ struct ChoresView: View {
                         .padding(.trailing)
                     }
                     Spacer()
+                    ScrollView{
+                        GroupBox(label: Label("Chore 1", systemImage: "list.number")){
+                            Text("Chore 1")
+                        }
+                        .cornerRadius(20)
+                    }
                 }
+                .padding(15)
             }
         }
-    }
 }
 
 struct ChoresView_Previews: PreviewProvider {

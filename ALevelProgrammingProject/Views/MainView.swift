@@ -7,18 +7,14 @@
 
 import SwiftUI
 
-
 struct MainView: View {
-    @State private var currentDate: Date = Date()
     var body: some View {
-        NavigationView {
             ZStack{
                 VStack{
                     HStack{
                         Text(Date.now, format: .dateTime.day().month().year())
                             .font(.title)
                             .fontWeight(.semibold)
-                            .padding(.leading)
                         Spacer()
                         Button(action: {}) {
                             Image(systemName: "info.circle.fill")
@@ -28,8 +24,7 @@ struct MainView: View {
                         .padding(.trailing)
                     }
                     Spacer()
-                }
-            }
+                }.padding(15)
         }
     }
 }
