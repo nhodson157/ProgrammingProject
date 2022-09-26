@@ -30,7 +30,32 @@ struct ChoresView: View {
                             Text("Chore 1")
                         }
                         .cornerRadius(20)
-                    }
+                        GroupBox(label: Label("Chore 2", systemImage: "list.number")){
+                            Text("Chore 2")
+                        }
+                        .cornerRadius(20)
+                        GroupBox(label: Label("Chore 3", systemImage: "list.number")){
+                            Text("Chore 3")
+                        }
+                        .cornerRadius(20)
+                        GroupBox(label: Label("Chore 4", systemImage: "list.number")){
+                            Text("Chore 4")
+                        }
+                        .cornerRadius(20)
+                        GroupBox(label: Label("Chore 5", systemImage: "list.number")){
+                            Text("Chore 5")
+                        }
+                        .cornerRadius(20)
+                        GroupBox(label: Label("Chore 6", systemImage: "list.number")){
+                            Text("Chore 6")
+                        }
+                        .cornerRadius(20)
+                        GroupBox(label: Label("Chore 7", systemImage: "list.number")){
+                            Text("Chore 7")
+                        }
+                        .cornerRadius(20)
+                    }.padding()
+                    .border(.secondary)
                 }
                 .padding(15)
             }

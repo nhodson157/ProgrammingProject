@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var randomText: String = ""
+    
     var body: some View {
             ZStack{
                 VStack{
@@ -24,8 +26,45 @@ struct MainView: View {
                         .padding(.trailing)
                     }
                     Spacer()
-                }.padding(15)
-        }
+                    }
+                HStack{
+                    VStack{
+                        Button{
+                            print("")
+                        } label: {
+                            Text("Chore 1")
+                        }.padding(10)
+                            .border(.secondary)
+                            .foregroundColor(.black)
+                        Button{
+                            print("")
+                        } label: {
+                            Text("Chore 2")
+                        }.padding(10)
+                            .border(.secondary)
+                            .foregroundColor(.black)
+                        Button{
+                            print("")
+                        } label: {
+                            Text("Chore 3")
+                        }.padding(10)
+                            .border(.secondary)
+                            .foregroundColor(.black)
+                        Button{
+                            print("")
+                        } label: {
+                            Text("Chore 4")
+                        }.padding(10)
+                            .border(.secondary)
+                            .foregroundColor(.black)
+
+                    }
+                    VStack{
+                        
+                    }.padding()
+                        .border(.primary)
+                }
+        }.padding(15)
     }
 }
 
