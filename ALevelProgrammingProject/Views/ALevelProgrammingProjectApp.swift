@@ -11,16 +11,16 @@ import SwiftUI
 struct ALevelProgrammingProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView{
-                ChoresView()
+            TabView{ //Creating a tab bar that will be present across views
+                ChoresView() //Creating a tab for the chores screen
                     .tabItem{
                         Label("Chores", systemImage: "list.number")
                     }
-                MainView()
+                MainView() // Creating a tab for the main screen
                     .tabItem{
                         Label("Main Menu", systemImage: "house")
                     }
-                RewardsView()
+                RewardsView() //Creating a tab for rewards screen
                     .tabItem{
                         Label("Rewards", systemImage: "gift")
                     }

@@ -14,11 +14,11 @@ struct MainView: View {
             ZStack{
                 VStack{
                     HStack{
-                        Text(Date.now, format: .dateTime.day().month().year())
+                        Text(Date.now, format: .dateTime.day().month().year()) //Displays the current date
                             .font(.title)
                             .fontWeight(.semibold)
                         Spacer()
-                        Button(action: {}) {
+                        Button(action: {}) { // Information button to go int top right corner of screen
                             Image(systemName: "info.circle.fill")
                                 .resizable(resizingMode: .stretch)
                                 .foregroundColor(Color.black)

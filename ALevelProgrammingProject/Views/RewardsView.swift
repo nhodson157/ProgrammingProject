@@ -54,6 +54,19 @@ struct RewardsView: View {
                 
                 Spacer()
                 
+                Button(action: {}) {
+                    Text("Redeem Reward")
+                        .font(.title)
+                        .foregroundColor(Color.black)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.black, lineWidth: 1)
+                        )
+                }
+                Spacer()
+
+                
             }
         }
     }
