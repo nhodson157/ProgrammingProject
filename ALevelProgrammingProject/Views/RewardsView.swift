@@ -35,22 +35,83 @@ struct RewardsView: View {
                 }.padding(20)
                 
                 ScrollView{
-                    GroupBox(label: Label("Reward 1", systemImage: "gift")){
-                        Text("Reward 1")
+                    GroupBox(label: Label("",systemImage: "")){
+                        HStack{
+                            Image(systemName: "gift")
+                                .scaleEffect(2)
+                            Spacer()
+                            Text("Reward 1")
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            Text("Price: 250")
+                            Image(systemName: "star.fill")
+                        }
                     }
                     .cornerRadius(20)
-                    GroupBox(label: Label("Reward 2", systemImage: "gift")){
-                        Text("Reward 2")
+                    .padding(10)
+                    .shadow(radius: 10)
+                    
+                    
+                    GroupBox(label: Label("",systemImage: "")){
+                        HStack{
+                            Image(systemName: "gift")
+                                .scaleEffect(2)
+                            Spacer()
+                            Text("Reward 2")
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            Text("Price: 115")
+                            Image(systemName: "star.fill")
+                        }
                     }
                     .cornerRadius(20)
-                    GroupBox(label: Label("Reward 3", systemImage: "gift")){
-                        Text("Reward 3")
+                    .padding(10)
+                    .shadow(radius: 10)
+                    
+                    
+                    GroupBox(label: Label("",systemImage: "")){
+                        HStack{
+                            Image(systemName: "gift")
+                                .scaleEffect(2)
+                            Spacer()
+                            Text("Reward 3")
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            Text("Price: 450")
+                            Image(systemName: "star.fill")
+                        }
                     }
                     .cornerRadius(20)
-                    GroupBox(label: Label("Reward 4", systemImage: "gift")){
-                        Text("Reward 4")
-                    }
-                }
+                    .padding(10)
+                    .shadow(radius: 10)
+                    
+                    
+                    GroupBox(label: Label("",systemImage: "")){
+                        HStack{
+                            Image(systemName: "gift")
+                                .scaleEffect(2)
+                            Spacer()
+                            Text("Reward 4")
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            Text("Price: 1500")
+                            Image(systemName: "star.fill")
+                        }
+                    }.cornerRadius(20)
+                        .padding(10)
+                        .shadow(radius: 10)
+                    
+                }.border(.secondary)
+                .padding(.horizontal, 10)
+                    
                 
                 Spacer()
                 

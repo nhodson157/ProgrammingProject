@@ -25,36 +25,60 @@ struct ChoresView: View {
                         .padding(.trailing)
                     }
                     Spacer()
+                    
                     ScrollView{
-                        GroupBox(label: Label("Chore 1", systemImage: "list.number")){
+                        GroupBox(label: Label("26/5/22", systemImage: "calendar")){
                             Text("Chore 1")
+                            HStack{
+                                Spacer()
+                                Text("Reward: 100")
+                                Image(systemName: "star.fill")
+                            }
                         }
                         .cornerRadius(20)
-                        GroupBox(label: Label("Chore 2", systemImage: "list.number")){
+                        .padding(5)
+                        .shadow(radius: 10)
+                        
+                        
+                        GroupBox(label: Label("26/5/22", systemImage: "calendar")){
                             Text("Chore 2")
+                            HStack{
+                                Spacer()
+                                Text("Reward: 40")
+                                Image(systemName: "star.fill")
+                            }
                         }
                         .cornerRadius(20)
-                        GroupBox(label: Label("Chore 3", systemImage: "list.number")){
+                        .padding(5)
+                        .shadow(radius: 10)
+                        
+                        
+                        GroupBox(label: Label("27/5/22", systemImage: "calendar")){
                             Text("Chore 3")
+                            HStack{
+                                Spacer()
+                                Text("Reward: 80")
+                                Image(systemName: "star.fill")
+                            }
                         }
                         .cornerRadius(20)
-                        GroupBox(label: Label("Chore 4", systemImage: "list.number")){
+                        .padding(5)
+                        .shadow(radius: 10)
+                        
+                        
+                        GroupBox(label: Label("28/5/22", systemImage: "calendar")){
                             Text("Chore 4")
-                        }
-                        .cornerRadius(20)
-                        GroupBox(label: Label("Chore 5", systemImage: "list.number")){
-                            Text("Chore 5")
-                        }
-                        .cornerRadius(20)
-                        GroupBox(label: Label("Chore 6", systemImage: "list.number")){
-                            Text("Chore 6")
-                        }
-                        .cornerRadius(20)
-                        GroupBox(label: Label("Chore 7", systemImage: "list.number")){
-                            Text("Chore 7")
-                        }
-                        .cornerRadius(20)
-                    }.padding()
+                            HStack{
+                                Spacer()
+                                Text("Reward: 120")
+                                Image(systemName: "star.fill")
+                            }
+                        }.cornerRadius(20)
+                            .padding(5)
+                        .shadow(radius: 10)
+                        
+                        
+                    }
                     .border(.secondary)
                 }
                 .padding(15)
