@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922B264A28E2F30A007FF62E /* CheckBoxView.swift */; };
+		9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9264C42028ED902B004C7F40 /* Colours.xcassets */; };
+		9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42228ED9164004C7F40 /* ColourExtension.swift */; };
 		929E09BA28D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */; };
 		929E09BE28D0732D00AA8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E09BD28D0732D00AA8F36 /* Assets.xcassets */; };
 		929E09C128D0732D00AA8F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E09C028D0732D00AA8F36 /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		922B264A28E2F30A007FF62E /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		9264C42028ED902B004C7F40 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		9264C42228ED9164004C7F40 /* ColourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourExtension.swift; sourceTree = "<group>"; };
 		929E09B628D0732B00AA8F36 /* ALevelProgrammingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALevelProgrammingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALevelProgrammingProjectApp.swift; sourceTree = "<group>"; };
 		929E09BD28D0732D00AA8F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		922B264328D9BA81007FF62E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9264C42228ED9164004C7F40 /* ColourExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				922B264328D9BA81007FF62E /* Extensions */,
 				922B264428D9BA9D007FF62E /* Views */,
 				929E09BD28D0732D00AA8F36 /* Assets.xcassets */,
+				9264C42028ED902B004C7F40 /* Colours.xcassets */,
 				929E09BF28D0732D00AA8F36 /* Preview Content */,
 			);
 			path = ALevelProgrammingProject;
@@ -257,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929E09C128D0732D00AA8F36 /* Preview Assets.xcassets in Resources */,
+				9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */,
 				929E09BE28D0732D00AA8F36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
+				9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */,
 				922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */,
 				929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */,
 				929E09BA28D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift in Sources */,

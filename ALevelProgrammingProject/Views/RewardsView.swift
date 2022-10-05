@@ -10,6 +10,8 @@ import SwiftUI
 struct RewardsView: View {
     var body: some View {
         ZStack{
+            Rectangle()
+            Color.pewterBlue
             VStack{
                 HStack{
                     Text("Rewards")
