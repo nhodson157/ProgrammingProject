@@ -14,7 +14,7 @@ struct MainView: View {
             ZStack{
                 VStack{
                     HStack{
-                        Text(Date.now, format: .dateTime.day().month().year()) //Displays the current date
+                        Text(Date.getShortDate(Date())) //Displays the current date
                             .font(.title)
                             .fontWeight(.semibold)
                         Spacer()

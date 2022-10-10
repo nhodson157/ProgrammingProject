@@ -11,6 +11,7 @@ struct RewardsView: View {
     var body: some View {
         ZStack{
             Rectangle()
+                .edgesIgnoringSafeArea(.top)
             Color.pewterBlue
             VStack{
                 HStack{
@@ -54,6 +55,7 @@ struct RewardsView: View {
                     .cornerRadius(20)
                     .padding(10)
                     .shadow(radius: 10)
+                    
                     
                     
                     GroupBox(label: Label("",systemImage: "")){
@@ -107,11 +109,15 @@ struct RewardsView: View {
                             Text("Price: 1500")
                             Image(systemName: "star.fill")
                         }
-                    }.cornerRadius(20)
+                    }
+                    .cornerRadius(20)
                         .padding(10)
                         .shadow(radius: 10)
                     
-                }.border(.secondary)
+                }
+                .background(Color.darkPewter)
+                .cornerRadius(20)
+                .shadow(color: .white, radius: 5)
                 .padding(.horizontal, 10)
                     
                 

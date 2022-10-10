@@ -12,4 +12,5 @@ extension Color {
     static let alabaster = Color("Alabaster")
     static let pastelGray = Color("Pastel gray")
     static let pewterBlue = Color("Pewter blue")
+    static let darkPewter = Color("Dark pewter")
 }
