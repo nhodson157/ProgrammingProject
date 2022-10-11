@@ -9,11 +9,11 @@ import Foundation
 
 class Chore {
     let name: String
-    let dueBy: Date
+    let dueBy: String
     let description: String
     let setBy: String
     
-    init(name: String, dueBy: Date, description: String, setBy: String) {
+    init(name: String, dueBy: String, description: String, setBy: String) {
         self.name = name
         self.dueBy = dueBy
         self.description = description
@@ -21,7 +21,7 @@ class Chore {
     }
     
     
-    static let example = Chore(name: "Example Chore", dueBy: Date(), description: "Example chore description", setBy: "Myself")
+    static let example = Chore(name: "Example Chore", dueBy: "11th October 2022", description: "Example chore description", setBy: "Myself")
     
 }
 

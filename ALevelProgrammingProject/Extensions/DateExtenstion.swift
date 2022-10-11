@@ -16,6 +16,13 @@ extension Date {
         return formatter.string(from: self)
     }
     
+    func getNumDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        
+        return formatter.string(from: self)
+    }
+    
     func previousDay() -> Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: self) ?? Date()
     }

@@ -9,12 +9,13 @@ import SwiftUI
 
 struct MainView: View {
     @State private var checked = false
+    @State private var currentDate: String = Date.getShortDate(Date())()
     
     var body: some View {
             ZStack{
                 VStack{
                     HStack{
-                        Text(Date.getShortDate(Date())) //Displays the current date
+                        Text("\(currentDate)")
                             .font(.title)
                             .fontWeight(.semibold)
                         Spacer()

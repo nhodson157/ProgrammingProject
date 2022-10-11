@@ -10,6 +10,7 @@ import SwiftUI
 struct ClassTesting: View {
     @State private var currentDate: Date = Date()
     let chore: Chore
+    let secondary: Chore
     var body: some View {
         
         VStack{
@@ -17,12 +18,22 @@ struct ClassTesting: View {
             Text("\(chore.dueBy)")
             Text("\(chore.description)")
             Text("\(chore.setBy)")
+            
+            GroupBox(label: Label("\(chore.dueBy)", systemImage: "calendar")){
+                Text("\(chore.name)")
+                HStack{
+                    Spacer()
+                    Text("Reward: 100")
+                    Image(systemName: "star.fill")
+            
         }
     }
 }
 
 struct ClassTesting_Previews: PreviewProvider {
     static var previews: some View {
-        ClassTesting(chore: Chore(name: "Example Chore", dueBy: Date(), description: "Example chore description", setBy: "Myself"))
+        ClassTesting(chore: Chore(name: "Example Chore", dueBy: ("\(Date.getShortDate(Date())())"), description: "Example chore description", setBy: "Myself"))
+            
+        ClassTesting(secondary: Chore(name: "Chore 2 demo", dueBy: "No due date", description: "Does this work?", setBy: "Dumbledore"))
     }
 }
