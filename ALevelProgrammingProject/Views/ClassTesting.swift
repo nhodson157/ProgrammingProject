@@ -24,7 +24,7 @@ struct ClassTesting: View {
                 Text("\(chore.name)")
                 HStack{
                     Spacer()
-                    Text("Reward: 100")
+                    Text("Reward: \(chore.reward)")
                     Image(systemName: "star.fill")
                 }
             }.padding(10)
@@ -71,7 +71,7 @@ struct ClassTesting: View {
 
 struct ClassTesting_Previews: PreviewProvider {
     static var previews: some View {
-        ClassTesting(chore: Chore(name: "Example Chore", dueBy: ("\(Date.getShortDate(Date())())"), description: "Example chore description", setBy: "Myself", reward: 100)
+        ClassTesting(chore: Chore(name: "Example Chore", dueBy: ("\(Date.getShortDate(Date())())"), description: "Example chore description", setBy: "Myself", reward: 100),
                      secondary: Chore(name: "Second", dueBy: "N/A", description: "AAA", setBy: "AAA", reward: 50)
         
         )

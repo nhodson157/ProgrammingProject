@@ -8,7 +8,7 @@
 import Foundation
 
 class Chore {
-    let name: String
+    let name: String  //Attributes of the class
     let dueBy: String
     let description: String
     let setBy: String
@@ -16,7 +16,7 @@ class Chore {
     
     init(name: String, dueBy: String, description: String, setBy: String, reward: Int) {
         self.name = name
-        self.dueBy = dueBy
+        self.dueBy = dueBy  //Initialising the class and attributes
         self.description = description
         self.setBy = setBy
         self.reward = reward
@@ -24,6 +24,7 @@ class Chore {
     
     
     static let example = Chore(name: "Example Chore", dueBy: "11th October 2022", description: "Example chore description", setBy: "Myself", reward: 100)
+    //Creating an example instance of the chore class
     
 }
 
