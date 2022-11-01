@@ -22,6 +22,10 @@
 		929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E728D1DFB600AA8F36 /* ChoresView.swift */; };
 		929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E928D1DFC900AA8F36 /* MainView.swift */; };
 		929E09EC28D1E18600AA8F36 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09EB28D1E18600AA8F36 /* RewardsView.swift */; };
+		92FBF7E929111C0500AE5BDC /* ChoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7E829111C0500AE5BDC /* ChoreItem.swift */; };
+		92FBF7ED29111D3300AE5BDC /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */; };
+		92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7EE29111FE100AE5BDC /* RewardItem.swift */; };
+		92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7F029111FF500AE5BDC /* Reward.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		929E09E728D1DFB600AA8F36 /* ChoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresView.swift; sourceTree = "<group>"; };
 		929E09E928D1DFC900AA8F36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929E09EB28D1E18600AA8F36 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		92FBF7E829111C0500AE5BDC /* ChoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreItem.swift; sourceTree = "<group>"; };
+		92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
+		92FBF7EE29111FE100AE5BDC /* RewardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItem.swift; sourceTree = "<group>"; };
+		92FBF7F029111FF500AE5BDC /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,12 @@
 			children = (
 				929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */,
 				922B264A28E2F30A007FF62E /* CheckBoxView.swift */,
+				92FBF7E829111C0500AE5BDC /* ChoreItem.swift */,
+				92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */,
 				929E09E728D1DFB600AA8F36 /* ChoresView.swift */,
 				929E09E928D1DFC900AA8F36 /* MainView.swift */,
 				929E09EB28D1E18600AA8F36 /* RewardsView.swift */,
+				92FBF7EE29111FE100AE5BDC /* RewardItem.swift */,
 				9264C42A28F482CC004C7F40 /* ClassTesting.swift */,
 			);
 			path = Views;
@@ -113,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9264C42628F47DD0004C7F40 /* Chore.swift */,
+				92FBF7F029111FF500AE5BDC /* Reward.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,14 +318,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FBF7ED29111D3300AE5BDC /* MainMenuItem.swift in Sources */,
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
 				9264C42B28F482CC004C7F40 /* ClassTesting.swift in Sources */,
+				92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */,
 				9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */,
 				922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */,
+				92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */,
 				929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */,
 				9264C42728F47DD0004C7F40 /* Chore.swift in Sources */,
 				9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */,
 				929E09BA28D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift in Sources */,
+				92FBF7E929111C0500AE5BDC /* ChoreItem.swift in Sources */,
 				929E09EC28D1E18600AA8F36 /* RewardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

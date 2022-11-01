@@ -29,6 +29,9 @@ struct ClassTesting: View {
                 }
             }.padding(10)
             .cornerRadius(20)
+            
+            ChoreItem(chore: secondary)
+            ChoreItem(chore: chore)
         }
         
         VStack{
@@ -66,14 +69,16 @@ struct ClassTesting: View {
         .padding()
             .border(.primary)
         
+        VStack{
+            MainMenuItem(chore: chore)
+            MainMenuItem(chore: secondary)
+        }
+        
     }
 }
 
 struct ClassTesting_Previews: PreviewProvider {
     static var previews: some View {
-        ClassTesting(chore: Chore(name: "Example Chore", dueBy: ("\(Date.getShortDate(Date())())"), description: "Example chore description", setBy: "Myself", reward: 100),
-                     secondary: Chore(name: "Second", dueBy: "N/A", description: "AAA", setBy: "AAA", reward: 50)
-        
-        )
+        ClassTesting(chore: Chore.example, secondary: Chore(name: "Second", dueBy: "N/A", description: "Description", setBy: "Anonymous", reward: 50, completed: true))
     }
 }
