@@ -25,6 +25,10 @@ class Chore {
     }
     
     
+    func calcReward() {
+        
+    }
+    
     
     static let example = Chore(name: "Example Chore", dueBy: "11th October 2022", description: "Example chore description", setBy: "Myself", reward: 100, completed: false)
     //Creating an example instance of the chore class

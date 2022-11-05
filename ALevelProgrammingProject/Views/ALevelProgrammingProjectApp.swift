@@ -24,8 +24,7 @@ struct ALevelProgrammingProjectApp: App {
                     .tabItem{
                         Label("Rewards", systemImage: "gift")
                     }
-                
-            }
+            }.background(Color.red)
         }
     }
 }
