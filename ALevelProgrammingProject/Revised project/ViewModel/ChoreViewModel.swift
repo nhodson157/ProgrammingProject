@@ -17,6 +17,7 @@ class ChoreViewModel: ObservableObject {
     @Published var choreColour: String = "Yellow"
     @Published var choreDeadline: Date = Date()
     @Published var choreType: String = "Easy"
+    @Published var showDatePicker: Bool = false
     
     //MARK: Adding Chore To Core Data
     func addChore(context: NSManagedObjectContext)->Bool{
@@ -31,4 +32,13 @@ class ChoreViewModel: ObservableObject {
         }
         return false
     }
+    
+    //MARK: Resetting Data
+    func resetChoreData(){
+        choreType = "Easy"
+        choreColour = "Yellow"
+        choreTitle = ""
+        choreDeadline = Date()
+    }
+    
 }

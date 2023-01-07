@@ -125,17 +125,17 @@ struct AddNewChore: View {
                                 withAnimation{choreModel.choreType = type}
                             }
                     }
-                }
-                .padding(.top,8)
+                    .padding(.top,8)
             }
+                
             .padding(.vertical,10)
-            
+                
             Divider()
-            
+                
             //MARK: Save Button
-            Button{
-                choreModel.addChore(context: env.managedObjectContext)
-            } label: {
+                Button {
+                    //MARK: If Success Closing View
+                }
                 Text("Save Chore")
                     .font(.callout)
                     .fontWeight(.semibold)
@@ -154,6 +154,11 @@ struct AddNewChore: View {
         }
         .frame(maxHeight: .infinity,alignment: .top)
         .padding()
+        .overlay{
+            ZStack{
+                
+            }
+        }
     }
 }
 

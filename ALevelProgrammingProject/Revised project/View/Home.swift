@@ -57,7 +57,9 @@ struct Home: View {
                     .ignoresSafeArea()
             }
         }
-        .fullScreenCover(isPresented: $choreModel.openEditChore){
+        .fullScreenCover(isPresented: $choreModel.openEditChore) {
+            choreModel.resetChoreData()
+        } content: {
             AddNewChore()
                 .environmentObject(choreModel)
         }
