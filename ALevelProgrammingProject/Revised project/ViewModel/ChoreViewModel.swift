@@ -19,9 +19,18 @@ class ChoreViewModel: ObservableObject {
     @Published var choreType: String = "Easy"
     @Published var showDatePicker: Bool = false
     
+    //MARK: Editing Existing Chore Data
+    @Published var editChore: Chore?
+    
     //MARK: Adding Chore To Core Data
     func addChore(context: NSManagedObjectContext)->Bool{
-        let chore = Chore(context: context)
+        //MARK: Updating Existing Data In Core Data
+        var chore: Chore!
+        if let editChore = editChore{
+            chore = editChore
+        } else {
+            chore = Chore(context: context)
+        }
         chore.title = choreTitle
         chore.colour = choreColour
         chore.deadline = choreDeadline
@@ -40,6 +49,16 @@ class ChoreViewModel: ObservableObject {
         choreColour = "Yellow"
         choreTitle = ""
         choreDeadline = Date()
+    }
+    
+    //MARK: If Edit Chore Is Available Then Setting Existing Data
+    func setupChore(){
+        if let editChore = editChore {
+            choreType = editChore.type ?? "Easy"
+            choreColour = editChore.colour ?? "Yellow"
+            choreTitle = editChore.title ?? ""
+            choreDeadline = editChore.deadline ?? Date()
+        }
     }
     
 }

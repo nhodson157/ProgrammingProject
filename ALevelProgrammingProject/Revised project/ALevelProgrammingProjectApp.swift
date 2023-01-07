@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct ALevelProgrammingProject: App {
+    let persistanceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup{
             NavigationView{
                 Home()
+                    .environment(\.managedObjectContext, persistanceController.container.viewContext)
                     .navigationBarTitle("Task Manager")
                     .navigationBarTitleDisplayMode(.inline)
             }

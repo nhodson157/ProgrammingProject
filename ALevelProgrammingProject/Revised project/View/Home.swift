@@ -14,6 +14,10 @@ struct Home: View {
     
     //MARK: Fetching Task
     @FetchRequest(entity: Chore.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Chore.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var chores: FetchedResults<Chore>
+    
+    //MARK: Environment Values
+    @Environment(\.self) var env
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -72,6 +76,7 @@ struct Home: View {
     @ViewBuilder
     func ChoreView()-> some View{
         LazyVStack(spacing: 20){
+            //MARK: Custom Filtered Request View
             ForEach(chores){ chore in
                 ChoreRowView(chore: chore)
             }
@@ -90,7 +95,7 @@ struct Home: View {
                     .padding(.horizontal)
                     .background{
                         Capsule()
-                            .fill(.gray.opacity(0.3))
+                            .fill(.white.opacity(0.3))
                     }
                 
                 Spacer()
@@ -98,13 +103,51 @@ struct Home: View {
                 //MARK: Edit Button Only For Non Completed Chores
                 if !chore.isCompleted{
                     Button{
-                        
+                        choreModel.editChore = chore
+                        choreModel.openEditChore = true
+                        choreModel.setupChore()
                     } label: {
                         Image(systemName: "square.and.pencil")
                             .foregroundColor(.black)
                     }
                 }
             }
+            Text(chore.title ?? "")
+                .font(.title2.bold())
+                .foregroundColor(.black)
+                .padding(.vertical,10)
+            
+            HStack(alignment: .bottom, spacing: 0){
+                VStack(alignment: .leading, spacing: 10){
+                    Label {
+                        Text((chore.deadline ?? Date()).formatted(date: .long, time: .omitted))
+                    } icon: {
+                        Image(systemName: "calendar")
+                    }
+                    .font(.caption)
+                    
+                    Label {
+                        Text((chore.deadline ?? Date()).formatted(date: .omitted, time: .shortened))
+                    } icon: {
+                        Image(systemName: "clock")
+                    }
+                    .font(.caption)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                if !chore.isCompleted{
+                    Button{
+                        //MARK: Updating Core Data
+                        chore.isCompleted.toggle()
+                        try? env.managedObjectContext.save()
+                    } label: {
+                        Circle()
+                            .strokeBorder(.black,lineWidth: 1.5)
+                            .contentShape(Circle())
+                    }
+                }
+            }
+            
         }
         .padding()
         .frame(maxWidth: .infinity)

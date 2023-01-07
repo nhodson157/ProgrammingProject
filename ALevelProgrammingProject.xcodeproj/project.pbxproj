@@ -13,6 +13,7 @@
 		924B39382969C4FA00B1A602 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39372969C4FA00B1A602 /* Home.swift */; };
 		924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39392969C90300B1A602 /* ChoreViewModel.swift */; };
 		924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393B2969CF6D00B1A602 /* AddNewChore.swift */; };
+		924B393E296A18D200B1A602 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393D296A18D200B1A602 /* Persistence.swift */; };
 		925419B72912840000EF9717 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B62912840000EF9717 /* Value.swift */; };
 		925419B92912874300EF9717 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B82912874300EF9717 /* ValueManager.swift */; };
 		9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9264C42028ED902B004C7F40 /* Colours.xcassets */; };
@@ -55,6 +56,7 @@
 		924B39372969C4FA00B1A602 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		924B39392969C90300B1A602 /* ChoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewModel.swift; sourceTree = "<group>"; };
 		924B393B2969CF6D00B1A602 /* AddNewChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChore.swift; sourceTree = "<group>"; };
+		924B393D296A18D200B1A602 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		925419B62912840000EF9717 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		925419B82912874300EF9717 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
 		9264C42028ED902B004C7F40 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				924B39352969C4D500B1A602 /* View */,
 				924B39332969C4AD00B1A602 /* ContentView.swift */,
 				929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */,
+				924B393D296A18D200B1A602 /* Persistence.swift */,
 				924B392F2969C0A400B1A602 /* choreManager.xcdatamodeld */,
 				929E09BD28D0732D00AA8F36 /* Assets.xcassets */,
 			);
@@ -361,6 +364,7 @@
 			files = (
 				924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */,
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
+				924B393E296A18D200B1A602 /* Persistence.swift in Sources */,
 				925419B72912840000EF9717 /* Value.swift in Sources */,
 				925419B92912874300EF9717 /* ValueManager.swift in Sources */,
 				924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */,
