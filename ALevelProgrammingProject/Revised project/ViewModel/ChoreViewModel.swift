@@ -26,6 +26,7 @@ class ChoreViewModel: ObservableObject {
         chore.colour = choreColour
         chore.deadline = choreDeadline
         chore.type = choreType
+        chore.isCompleted = false
         
         if let _ = try? context.save(){
             return true

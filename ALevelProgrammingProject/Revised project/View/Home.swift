@@ -11,6 +11,9 @@ struct Home: View {
     @StateObject var choreModel: ChoreViewModel = .init()
     //MARK: Matched Geometry Namespace
     @Namespace var animation
+    
+    //MARK: Fetching Task
+    @FetchRequest(entity: Chore.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Chore.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var chores: FetchedResults<Chore>
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -62,6 +65,52 @@ struct Home: View {
         } content: {
             AddNewChore()
                 .environmentObject(choreModel)
+        }
+    }
+    
+    //MARK: ChoreView
+    @ViewBuilder
+    func ChoreView()-> some View{
+        LazyVStack(spacing: 20){
+            ForEach(chores){ chore in
+                ChoreRowView(chore: chore)
+            }
+        }
+        .padding(.top, 20)
+    }
+    
+    //MARK: Chore Row View
+    @ViewBuilder
+    func ChoreRowView(chore:Chore)->some View{
+        VStack(alignment: .leading, spacing: 10){
+            HStack{
+                Text(chore.type ?? "")
+                    .font(.callout)
+                    .padding(.vertical,5)
+                    .padding(.horizontal)
+                    .background{
+                        Capsule()
+                            .fill(.gray.opacity(0.3))
+                    }
+                
+                Spacer()
+                
+                //MARK: Edit Button Only For Non Completed Chores
+                if !chore.isCompleted{
+                    Button{
+                        
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background{
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Color(chore.colour ?? "Yellow"))
         }
     }
     

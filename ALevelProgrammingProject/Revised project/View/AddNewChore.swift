@@ -74,7 +74,7 @@ struct AddNewChore: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .overlay(alignment: .bottomTrailing){
                 Button{
-                
+                    choreModel.showDatePicker.toggle()
                 } label: {
                     Image(systemName: "calendar")
                         .foregroundColor(.black)
@@ -126,45 +126,66 @@ struct AddNewChore: View {
                             }
                     }
                     .padding(.top,8)
-            }
+                }
                 
-            .padding(.vertical,10)
+                .padding(.vertical,10)
                 
-            Divider()
+                Divider()
                 
-            //MARK: Save Button
+                //MARK: Save Button
                 Button {
                     //MARK: If Success Closing View
-                }
-                Text("Save Chore")
-                    .font(.callout)
-                    .fontWeight(.semibold)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .foregroundColor(.white)
-                    .background{
-                        Capsule()
-                            .fill(.black)
+                    if choreModel.addChore(context: env.managedObjectContext){
+                        env.dismiss()
                     }
+                } label: {
+                    Text("Save Chore")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .foregroundColor(.white)
+                        .background{
+                            Capsule()
+                                .fill(.black)
+                        }
+                }
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .padding(.bottom,10)
+                .disabled(choreModel.choreTitle == "")
+                .opacity(choreModel.choreTitle == "" ? 0.6 : 1)
             }
-            .frame(maxHeight: .infinity, alignment: .bottom)
-            .padding(.bottom,10)
-            .disabled(choreModel.choreTitle == "")
-            .opacity(choreModel.choreTitle == "" ? 0.6 : 1)
+            .frame(maxHeight: .infinity,alignment: .top)
+            .padding()
+            .overlay{
+                ZStack{
+                    if choreModel.showDatePicker{
+                        Rectangle()
+                            .fill(.ultraThinMaterial)
+                            .ignoresSafeArea()
+                            .onTapGesture{
+                                choreModel.showDatePicker = false
+                            }
+                        
+                        //MARK: Disabling Past Dates
+                        DatePicker.init("", selection: $choreModel.choreDeadline, in: Date.now...Date.distantFuture)
+                            .datePickerStyle(.graphical)
+                            .labelsHidden()
+                            .padding()
+                            .background(.white, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                            .padding()
+                    }
+                }
+                .animation(.easeInOut, value: choreModel.showDatePicker)
+            }
         }
-        .frame(maxHeight: .infinity,alignment: .top)
         .padding()
-        .overlay{
-            ZStack{
-                
-            }
-        }
     }
-}
-
-struct AddNewChore_Previews: PreviewProvider {
-    static var previews: some View {
-        AddNewChore()
-            .environmentObject(ChoreViewModel())
+    
+    struct AddNewChore_Previews: PreviewProvider {
+        static var previews: some View {
+            AddNewChore()
+                .environmentObject(ChoreViewModel())
+        }
     }
 }

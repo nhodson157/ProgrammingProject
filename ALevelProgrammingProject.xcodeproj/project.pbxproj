@@ -113,7 +113,6 @@
 		922B264428D9BA9D007FF62E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */,
 				929E09E728D1DFB600AA8F36 /* ChoresView.swift */,
 				929E09E928D1DFC900AA8F36 /* MainView.swift */,
 				929E09EB28D1E18600AA8F36 /* RewardsView.swift */,
@@ -127,6 +126,7 @@
 				924B39362969C4DF00B1A602 /* ViewModel */,
 				924B39352969C4D500B1A602 /* View */,
 				924B39332969C4AD00B1A602 /* ContentView.swift */,
+				929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */,
 				924B392F2969C0A400B1A602 /* choreManager.xcdatamodeld */,
 				929E09BD28D0732D00AA8F36 /* Assets.xcassets */,
 			);
