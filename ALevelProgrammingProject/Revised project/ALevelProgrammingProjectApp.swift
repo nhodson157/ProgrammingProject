@@ -16,7 +16,7 @@ struct ALevelProgrammingProject: App {
             NavigationView{
                 Home()
                     .environment(\.managedObjectContext, persistanceController.container.viewContext)
-                    .navigationBarTitle("Task Manager")
+                    .navigationBarTitle("Chore Manager")
                     .navigationBarTitleDisplayMode(.inline)
             }
         }
