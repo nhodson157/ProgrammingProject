@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922B264A28E2F30A007FF62E /* CheckBoxView.swift */; };
+		924B39312969C0A400B1A602 /* choreManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924B392F2969C0A400B1A602 /* choreManager.xcdatamodeld */; };
+		924B39342969C4AD00B1A602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39332969C4AD00B1A602 /* ContentView.swift */; };
+		924B39382969C4FA00B1A602 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39372969C4FA00B1A602 /* Home.swift */; };
+		924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39392969C90300B1A602 /* ChoreViewModel.swift */; };
+		924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393B2969CF6D00B1A602 /* AddNewChore.swift */; };
 		925419B72912840000EF9717 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B62912840000EF9717 /* Value.swift */; };
 		925419B92912874300EF9717 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B82912874300EF9717 /* ValueManager.swift */; };
 		9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9264C42028ED902B004C7F40 /* Colours.xcassets */; };
 		9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42228ED9164004C7F40 /* ColourExtension.swift */; };
-		9264C42728F47DD0004C7F40 /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42628F47DD0004C7F40 /* Chore.swift */; };
-		9264C42B28F482CC004C7F40 /* ClassTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42A28F482CC004C7F40 /* ClassTesting.swift */; };
 		9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42C28F484ED004C7F40 /* DateExtenstion.swift */; };
 		929E09BA28D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */; };
 		929E09BE28D0732D00AA8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E09BD28D0732D00AA8F36 /* Assets.xcassets */; };
@@ -24,11 +27,8 @@
 		929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E728D1DFB600AA8F36 /* ChoresView.swift */; };
 		929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E928D1DFC900AA8F36 /* MainView.swift */; };
 		929E09EC28D1E18600AA8F36 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09EB28D1E18600AA8F36 /* RewardsView.swift */; };
-		92FBF7E929111C0500AE5BDC /* ChoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7E829111C0500AE5BDC /* ChoreItem.swift */; };
-		92FBF7ED29111D3300AE5BDC /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */; };
 		92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7EE29111FE100AE5BDC /* RewardItem.swift */; };
 		92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7F029111FF500AE5BDC /* Reward.swift */; };
-		92FBF7F3291126A600AE5BDC /* RewardTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7F2291126A600AE5BDC /* RewardTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +50,15 @@
 
 /* Begin PBXFileReference section */
 		922B264A28E2F30A007FF62E /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		924B39302969C0A400B1A602 /* Task_manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_manager.xcdatamodel; sourceTree = "<group>"; };
+		924B39332969C4AD00B1A602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		924B39372969C4FA00B1A602 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		924B39392969C90300B1A602 /* ChoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewModel.swift; sourceTree = "<group>"; };
+		924B393B2969CF6D00B1A602 /* AddNewChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChore.swift; sourceTree = "<group>"; };
 		925419B62912840000EF9717 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		925419B82912874300EF9717 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
 		9264C42028ED902B004C7F40 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
 		9264C42228ED9164004C7F40 /* ColourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourExtension.swift; sourceTree = "<group>"; };
-		9264C42628F47DD0004C7F40 /* Chore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
-		9264C42A28F482CC004C7F40 /* ClassTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTesting.swift; sourceTree = "<group>"; };
 		9264C42C28F484ED004C7F40 /* DateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtenstion.swift; sourceTree = "<group>"; };
 		929E09B628D0732B00AA8F36 /* ALevelProgrammingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALevelProgrammingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E09B928D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALevelProgrammingProjectApp.swift; sourceTree = "<group>"; };
@@ -69,11 +72,8 @@
 		929E09E728D1DFB600AA8F36 /* ChoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresView.swift; sourceTree = "<group>"; };
 		929E09E928D1DFC900AA8F36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929E09EB28D1E18600AA8F36 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
-		92FBF7E829111C0500AE5BDC /* ChoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreItem.swift; sourceTree = "<group>"; };
-		92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
 		92FBF7EE29111FE100AE5BDC /* RewardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItem.swift; sourceTree = "<group>"; };
 		92FBF7F029111FF500AE5BDC /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
-		92FBF7F2291126A600AE5BDC /* RewardTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +121,38 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		924B39322969C46400B1A602 /* Revised project */ = {
+			isa = PBXGroup;
+			children = (
+				924B39362969C4DF00B1A602 /* ViewModel */,
+				924B39352969C4D500B1A602 /* View */,
+				924B39332969C4AD00B1A602 /* ContentView.swift */,
+				924B392F2969C0A400B1A602 /* choreManager.xcdatamodeld */,
+				929E09BD28D0732D00AA8F36 /* Assets.xcassets */,
+			);
+			path = "Revised project";
+			sourceTree = "<group>";
+		};
+		924B39352969C4D500B1A602 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				924B39372969C4FA00B1A602 /* Home.swift */,
+				924B393B2969CF6D00B1A602 /* AddNewChore.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		924B39362969C4DF00B1A602 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				924B39392969C90300B1A602 /* ChoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9264C42528F47DA1004C7F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9264C42628F47DD0004C7F40 /* Chore.swift */,
 				92FBF7F029111FF500AE5BDC /* Reward.swift */,
 				925419B62912840000EF9717 /* Value.swift */,
 				925419B82912874300EF9717 /* ValueManager.swift */,
@@ -155,12 +183,11 @@
 		929E09B828D0732B00AA8F36 /* ALevelProgrammingProject */ = {
 			isa = PBXGroup;
 			children = (
+				924B39322969C46400B1A602 /* Revised project */,
 				922B264328D9BA81007FF62E /* Extensions */,
 				92FBF7F4291128A800AE5BDC /* Reusable Items */,
 				922B264428D9BA9D007FF62E /* Views */,
-				92FBF7F5291128F100AE5BDC /* Test Views */,
 				9264C42528F47DA1004C7F40 /* Model */,
-				929E09BD28D0732D00AA8F36 /* Assets.xcassets */,
 				9264C42028ED902B004C7F40 /* Colours.xcassets */,
 				929E09BF28D0732D00AA8F36 /* Preview Content */,
 			);
@@ -196,20 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				922B264A28E2F30A007FF62E /* CheckBoxView.swift */,
-				92FBF7E829111C0500AE5BDC /* ChoreItem.swift */,
 				92FBF7EE29111FE100AE5BDC /* RewardItem.swift */,
-				92FBF7EC29111D3300AE5BDC /* MainMenuItem.swift */,
 			);
 			path = "Reusable Items";
-			sourceTree = "<group>";
-		};
-		92FBF7F5291128F100AE5BDC /* Test Views */ = {
-			isa = PBXGroup;
-			children = (
-				9264C42A28F482CC004C7F40 /* ClassTesting.swift */,
-				92FBF7F2291126A600AE5BDC /* RewardTesting.swift */,
-			);
-			path = "Test Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,21 +359,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FBF7ED29111D3300AE5BDC /* MainMenuItem.swift in Sources */,
+				924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */,
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
 				925419B72912840000EF9717 /* Value.swift in Sources */,
-				9264C42B28F482CC004C7F40 /* ClassTesting.swift in Sources */,
-				92FBF7F3291126A600AE5BDC /* RewardTesting.swift in Sources */,
 				925419B92912874300EF9717 /* ValueManager.swift in Sources */,
+				924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */,
 				92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */,
 				9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */,
+				924B39312969C0A400B1A602 /* choreManager.xcdatamodeld in Sources */,
+				924B39382969C4FA00B1A602 /* Home.swift in Sources */,
 				922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */,
 				92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */,
 				929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */,
-				9264C42728F47DD0004C7F40 /* Chore.swift in Sources */,
 				9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */,
+				924B39342969C4AD00B1A602 /* ContentView.swift in Sources */,
 				929E09BA28D0732B00AA8F36 /* ALevelProgrammingProjectApp.swift in Sources */,
-				92FBF7E929111C0500AE5BDC /* ChoreItem.swift in Sources */,
 				929E09EC28D1E18600AA8F36 /* RewardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +723,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		924B392F2969C0A400B1A602 /* choreManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				924B39302969C0A400B1A602 /* Task_manager.xcdatamodel */,
+			);
+			currentVersion = 924B39302969C0A400B1A602 /* Task_manager.xcdatamodel */;
+			path = choreManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 929E09AE28D0732B00AA8F36 /* Project object */;
 }

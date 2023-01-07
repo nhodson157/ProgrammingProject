@@ -80,6 +80,17 @@ struct ChoresView: View {
                         
                     }
                     .border(.secondary)
+                    
+                    Button(action: {}) {
+                        Text("Create New Chore")
+                            .font(.title)
+                            .foregroundColor(Color.black)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.black, lineWidth: 1)
+                                
+                    )}
                 }
                 .padding(15)
             }
