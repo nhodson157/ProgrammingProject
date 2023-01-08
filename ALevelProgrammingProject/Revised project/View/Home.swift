@@ -12,7 +12,7 @@ struct Home: View {
     //MARK: Matched Geometry Namespace
     @Namespace var animation
     
-    //MARK: Fetching Task
+    //MARK: Fetching Chore
     @FetchRequest(entity: Chore.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Chore.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var chores: FetchedResults<Chore>
     
     //MARK: Environment Values
@@ -32,9 +32,6 @@ struct Home: View {
                 
                 CustomSegmentedBar()
                     .padding(.top,5)
-                
-                //MARK: Task View
-                //Later will come
             }
             .padding()
         }
@@ -44,7 +41,7 @@ struct Home: View {
                 choreModel.openEditChore.toggle()
             } label: {
                 Label{
-                    Text("Add Task")
+                    Text("Add Chore")
                         .font(.callout)
                         .fontWeight(.semibold)
                     
@@ -86,7 +83,7 @@ struct Home: View {
     
     //MARK: Chore Row View
     @ViewBuilder
-    func ChoreRowView(chore:Chore)->some View{
+    func ChoreRowView(chore: Chore)->some View{
         VStack(alignment: .leading, spacing: 10){
             HStack{
                 Text(chore.type ?? "")
@@ -95,7 +92,7 @@ struct Home: View {
                     .padding(.horizontal)
                     .background{
                         Capsule()
-                            .fill(.white.opacity(0.3))
+                            .fill(.gray.opacity(0.3))
                     }
                 
                 Spacer()
@@ -147,7 +144,6 @@ struct Home: View {
                     }
                 }
             }
-            
         }
         .padding()
         .frame(maxWidth: .infinity)
@@ -160,7 +156,7 @@ struct Home: View {
     //MARK: Custom Segmented Bar
     @ViewBuilder
     func CustomSegmentedBar()-> some View{
-        let tabs = ["Today","Upcoming","Tasks Done"]
+        let tabs = ["Today","Upcoming","Chores Done"]
         HStack(spacing:10){
             ForEach(tabs,id: \.self){tab in
                 Text(tab)

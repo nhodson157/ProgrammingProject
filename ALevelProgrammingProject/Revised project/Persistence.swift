@@ -23,9 +23,9 @@ struct PersistenceController {
         return result
     }()
     
-    let container: NSPersistentCloudKitContainer
+    let container: NSPersistentContainer
     init(inMemory: Bool = false){
-        container = NSPersistentCloudKitContainer(name: "ALevelProgrammingProject")
+        container = NSPersistentContainer(name: "choreManager")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

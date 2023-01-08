@@ -14,8 +14,6 @@
 		924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39392969C90300B1A602 /* ChoreViewModel.swift */; };
 		924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393B2969CF6D00B1A602 /* AddNewChore.swift */; };
 		924B393E296A18D200B1A602 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393D296A18D200B1A602 /* Persistence.swift */; };
-		925419B72912840000EF9717 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B62912840000EF9717 /* Value.swift */; };
-		925419B92912874300EF9717 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925419B82912874300EF9717 /* ValueManager.swift */; };
 		9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9264C42028ED902B004C7F40 /* Colours.xcassets */; };
 		9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42228ED9164004C7F40 /* ColourExtension.swift */; };
 		9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42C28F484ED004C7F40 /* DateExtenstion.swift */; };
@@ -28,8 +26,6 @@
 		929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E728D1DFB600AA8F36 /* ChoresView.swift */; };
 		929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09E928D1DFC900AA8F36 /* MainView.swift */; };
 		929E09EC28D1E18600AA8F36 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E09EB28D1E18600AA8F36 /* RewardsView.swift */; };
-		92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7EE29111FE100AE5BDC /* RewardItem.swift */; };
-		92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBF7F029111FF500AE5BDC /* Reward.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +53,6 @@
 		924B39392969C90300B1A602 /* ChoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewModel.swift; sourceTree = "<group>"; };
 		924B393B2969CF6D00B1A602 /* AddNewChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChore.swift; sourceTree = "<group>"; };
 		924B393D296A18D200B1A602 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		925419B62912840000EF9717 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		925419B82912874300EF9717 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
 		9264C42028ED902B004C7F40 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
 		9264C42228ED9164004C7F40 /* ColourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourExtension.swift; sourceTree = "<group>"; };
 		9264C42C28F484ED004C7F40 /* DateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtenstion.swift; sourceTree = "<group>"; };
@@ -74,8 +68,6 @@
 		929E09E728D1DFB600AA8F36 /* ChoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresView.swift; sourceTree = "<group>"; };
 		929E09E928D1DFC900AA8F36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929E09EB28D1E18600AA8F36 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
-		92FBF7EE29111FE100AE5BDC /* RewardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItem.swift; sourceTree = "<group>"; };
-		92FBF7F029111FF500AE5BDC /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +148,6 @@
 		9264C42528F47DA1004C7F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				92FBF7F029111FF500AE5BDC /* Reward.swift */,
-				925419B62912840000EF9717 /* Value.swift */,
-				925419B82912874300EF9717 /* ValueManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				922B264A28E2F30A007FF62E /* CheckBoxView.swift */,
-				92FBF7EE29111FE100AE5BDC /* RewardItem.swift */,
 			);
 			path = "Reusable Items";
 			sourceTree = "<group>";
@@ -365,15 +353,11 @@
 				924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */,
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
 				924B393E296A18D200B1A602 /* Persistence.swift in Sources */,
-				925419B72912840000EF9717 /* Value.swift in Sources */,
-				925419B92912874300EF9717 /* ValueManager.swift in Sources */,
 				924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */,
-				92FBF7EF29111FE100AE5BDC /* RewardItem.swift in Sources */,
 				9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */,
 				924B39312969C0A400B1A602 /* choreManager.xcdatamodeld in Sources */,
 				924B39382969C4FA00B1A602 /* Home.swift in Sources */,
 				922B264B28E2F30A007FF62E /* CheckBoxView.swift in Sources */,
-				92FBF7F129111FF500AE5BDC /* Reward.swift in Sources */,
 				929E09EA28D1DFC900AA8F36 /* MainView.swift in Sources */,
 				9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */,
 				924B39342969C4AD00B1A602 /* ContentView.swift in Sources */,
