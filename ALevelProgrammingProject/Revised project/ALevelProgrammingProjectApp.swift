@@ -14,17 +14,10 @@ struct ALevelProgrammingProject: App {
     var body: some Scene {
         WindowGroup{
             NavigationView{
-                Home()
+                ContentView()
                     .environment(\.managedObjectContext, persistanceController.container.viewContext)
-                    .navigationBarTitle("Chore Manager")
-                    .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
 }
 
-struct ALevelProgrammingProject_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

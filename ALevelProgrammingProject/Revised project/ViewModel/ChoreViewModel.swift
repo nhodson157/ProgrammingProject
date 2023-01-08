@@ -49,6 +49,7 @@ class ChoreViewModel: ObservableObject {
         choreColour = "Yellow"
         choreTitle = ""
         choreDeadline = Date()
+        editChore = nil
     }
     
     //MARK: If Edit Chore Is Available Then Setting Existing Data

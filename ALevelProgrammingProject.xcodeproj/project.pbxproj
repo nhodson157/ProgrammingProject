@@ -14,6 +14,7 @@
 		924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B39392969C90300B1A602 /* ChoreViewModel.swift */; };
 		924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393B2969CF6D00B1A602 /* AddNewChore.swift */; };
 		924B393E296A18D200B1A602 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393D296A18D200B1A602 /* Persistence.swift */; };
+		924B3940296B05C400B1A602 /* Dynamic Filtered View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B393F296B05C400B1A602 /* Dynamic Filtered View.swift */; };
 		9264C42128ED902B004C7F40 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9264C42028ED902B004C7F40 /* Colours.xcassets */; };
 		9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42228ED9164004C7F40 /* ColourExtension.swift */; };
 		9264C42D28F484ED004C7F40 /* DateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264C42C28F484ED004C7F40 /* DateExtenstion.swift */; };
@@ -53,6 +54,7 @@
 		924B39392969C90300B1A602 /* ChoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewModel.swift; sourceTree = "<group>"; };
 		924B393B2969CF6D00B1A602 /* AddNewChore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChore.swift; sourceTree = "<group>"; };
 		924B393D296A18D200B1A602 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		924B393F296B05C400B1A602 /* Dynamic Filtered View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dynamic Filtered View.swift"; sourceTree = "<group>"; };
 		9264C42028ED902B004C7F40 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
 		9264C42228ED9164004C7F40 /* ColourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourExtension.swift; sourceTree = "<group>"; };
 		9264C42C28F484ED004C7F40 /* DateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtenstion.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				924B39372969C4FA00B1A602 /* Home.swift */,
+				924B393F296B05C400B1A602 /* Dynamic Filtered View.swift */,
 				924B393B2969CF6D00B1A602 /* AddNewChore.swift */,
 			);
 			path = View;
@@ -353,6 +356,7 @@
 				924B393C2969CF6D00B1A602 /* AddNewChore.swift in Sources */,
 				929E09E828D1DFB600AA8F36 /* ChoresView.swift in Sources */,
 				924B393E296A18D200B1A602 /* Persistence.swift in Sources */,
+				924B3940296B05C400B1A602 /* Dynamic Filtered View.swift in Sources */,
 				924B393A2969C90300B1A602 /* ChoreViewModel.swift in Sources */,
 				9264C42328ED9164004C7F40 /* ColourExtension.swift in Sources */,
 				924B39312969C0A400B1A602 /* choreManager.xcdatamodeld in Sources */,

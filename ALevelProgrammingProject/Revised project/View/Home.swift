@@ -71,10 +71,10 @@ struct Home: View {
     
     //MARK: ChoreView
     @ViewBuilder
-    func ChoreView()-> some View{
+    func ChoreView()->some View{
         LazyVStack(spacing: 20){
             //MARK: Custom Filtered Request View
-            ForEach(chores){ chore in
+            DynamicFilteredView(currentTab: choreModel.currentTab) { (chore: Chore) in
                 ChoreRowView(chore: chore)
             }
         }
