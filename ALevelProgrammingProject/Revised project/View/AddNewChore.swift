@@ -26,6 +26,22 @@ struct AddNewChore: View {
                             .foregroundColor(.black)
                     }
                 }
+                .overlay(alignment: .trailing){
+                    Button{
+                        if let editChore = choreModel.editChore{
+                            env.managedObjectContext.delete(editChore)
+                            try? env.managedObjectContext.save()
+                            env.dismiss()
+                        }
+                    } label: {
+                        Image(systemName: "trash")
+                            .font(.title3)
+                            .foregroundColor(.red)
+                    }
+                    .opacity(choreModel.editChore == nil ? 0: 1)
+                }
+            
+            
             VStack(alignment: .leading, spacing: 12){
                 Text("Chore Colour")
                     .font(.caption)

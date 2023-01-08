@@ -13,7 +13,7 @@ struct Home: View {
     @Namespace var animation
     
     //MARK: Fetching Chore
-    @FetchRequest(entity: Chore.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Chore.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var chores: FetchedResults<Chore>
+    @FetchRequest(entity: Chore.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Chore.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var chore: FetchedResults<Chore>
     
     //MARK: Environment Values
     @Environment(\.self) var env
@@ -32,6 +32,9 @@ struct Home: View {
                 
                 CustomSegmentedBar()
                     .padding(.top,5)
+                
+                //MARK: Chore View
+                ChoreView()
             }
             .padding()
         }
@@ -98,7 +101,7 @@ struct Home: View {
                 Spacer()
                 
                 //MARK: Edit Button Only For Non Completed Chores
-                if !chore.isCompleted{
+                if !chore.isCompleted && choreModel.currentTab != "Failed"{
                     Button{
                         choreModel.editChore = chore
                         choreModel.openEditChore = true
@@ -129,18 +132,28 @@ struct Home: View {
                         Image(systemName: "clock")
                     }
                     .font(.caption)
+                    
+                    Label {
+                        Text("\(chore.reward)")
+                    } icon: {
+                        Image(systemName: "star.fill")
+                            .scaleEffect(0.9)
+                    }
+                    .font(.caption)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                if !chore.isCompleted{
+                if !chore.isCompleted && choreModel.currentTab != "Failed"{
                     Button{
                         //MARK: Updating Core Data
                         chore.isCompleted.toggle()
                         try? env.managedObjectContext.save()
-                    } label: {
+                    }label: {
                         Circle()
                             .strokeBorder(.black,lineWidth: 1.5)
+                            .frame(width: 25, height: 25, alignment: .trailing)
                             .contentShape(Circle())
+                            
                     }
                 }
             }
@@ -156,7 +169,7 @@ struct Home: View {
     //MARK: Custom Segmented Bar
     @ViewBuilder
     func CustomSegmentedBar()-> some View{
-        let tabs = ["Today","Upcoming","Chores Done"]
+        let tabs = ["Today","Upcoming","Chores Done","Failed"]
         HStack(spacing:10){
             ForEach(tabs,id: \.self){tab in
                 Text(tab)

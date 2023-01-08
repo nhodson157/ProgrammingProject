@@ -18,6 +18,7 @@ class ChoreViewModel: ObservableObject {
     @Published var choreDeadline: Date = Date()
     @Published var choreType: String = "Easy"
     @Published var showDatePicker: Bool = false
+    @Published var choreReward: Int64 = 0
     
     //MARK: Editing Existing Chore Data
     @Published var editChore: Chore?
@@ -26,7 +27,7 @@ class ChoreViewModel: ObservableObject {
     func addChore(context: NSManagedObjectContext)->Bool{
         //MARK: Updating Existing Data In Core Data
         var chore: Chore!
-        if let editChore = editChore{
+        if let editChore = editChore {
             chore = editChore
         } else {
             chore = Chore(context: context)
@@ -36,6 +37,7 @@ class ChoreViewModel: ObservableObject {
         chore.deadline = choreDeadline
         chore.type = choreType
         chore.isCompleted = false
+        chore.reward = choreReward
         
         if let _ = try? context.save(){
             return true
@@ -50,6 +52,7 @@ class ChoreViewModel: ObservableObject {
         choreTitle = ""
         choreDeadline = Date()
         editChore = nil
+        choreReward = 0
     }
     
     //MARK: If Edit Chore Is Available Then Setting Existing Data
@@ -59,6 +62,7 @@ class ChoreViewModel: ObservableObject {
             choreColour = editChore.colour ?? "Yellow"
             choreTitle = editChore.title ?? ""
             choreDeadline = editChore.deadline ?? Date()
+            choreReward = editChore.reward ?? 0
         }
     }
     
